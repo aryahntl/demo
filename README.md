@@ -1,3 +1,3 @@
 # demo
-this is my first git repository <br>
+This is my First git Repository <br>
 Author - Himanshu Arya
