@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: bisque;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            height: 3.5em;
+            width: 10em;
+            color: brown;
+            background-color: cadetblue;
+            font-size: 2em;
+            font-weight: 900;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Click on Button to play Sound</h1>
+    <p>(click one button within one minute)</p>
+    <button onmousedown="sound1.play()" class="btn">Button 1</button>
+    <button onmousedown="sound2.play()" class="btn">Button 2</button>
+    <button onmousedown="sound3.play()" class="btn">Button 3</button>
+    <button onmousedown="sound4.play()" class="btn">Button 4</button>
+    <script>
+        var sound1 = new Audio();
+        sound1.src="sound/beep-warning.mp3";
+
+        var sound2=new Audio();
+        sound2.src="sound/emergency-alarm.mp3";
+
+        var sound3 =new Audio();
+        sound3.src="sound/military-alarm.mp3";
+
+        var sound4= new Audio();
+        sound4.src="sound/wrong-answer.mp3";
+    </script>
+</body>
+</html>
